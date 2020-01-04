@@ -17,11 +17,11 @@ Meteor.startup(() => {
     });
   }
 
-  Meteor.publish("employees", () => {
+  Meteor.publish("employees", per_page => {
     return Employees.find(
       {},
       {
-        limit: 20
+        limit: per_page
       }
     );
   });
