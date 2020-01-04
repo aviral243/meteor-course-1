@@ -8,7 +8,6 @@ Meteor.startup(() => {
   if (!numberRecords) {
     _.times(5000, () => {
       const { name, email, phone } = helpers.createCard();
-
       Employees.insert({
         name,
         email,
