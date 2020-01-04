@@ -7,3 +7,5 @@ const EmployeeList = () => {
     </div>
   );
 };
+
+export default EmployeeList;
